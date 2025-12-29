@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    #header-menu {
+        &.cnwp-desktop {
+            > .menu-item {
+                &.mega-menu {
+                    > .sub-menu {
+                        > .menu-item { width: 33.3%; }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,636 @@
+# Translation of Plugins - Parsi Date - Stable (latest release) in Persian
+# This file is distributed under the same license as the Plugins - Parsi Date - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-08-07 20:28:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fa\n"
+"Project-Id-Version: Plugins - Parsi Date - Stable (latest release)\n"
+
+#: includes/plugins/wc-gateways/wc-gateways.php:34
+msgid "Melli Bank (Sadad)"
+msgstr "بانک ملی (سداد)"
+
+#: includes/plugins/wc-gateways/wpp-melli-gateway.php:25
+#: assets/js/wc-pg-blocks/wpp-wc-melli-pg.js:3
+msgid "Melli Bank"
+msgstr "بانک ملی"
+
+#: includes/views/html-about.php:97
+msgid "About Us"
+msgstr "دربارهٔ ما"
+
+#: includes/views/html-about.php:118
+msgid "Our Team"
+msgstr "تیم ما"
+
+#: includes/views/html-about.php:108
+msgid "Follow Us"
+msgstr "ما را دنبال کنید"
+
+#: includes/views/html-about.php:150
+msgid "GitHub Contributors"
+msgstr "مشارکت‌کننده‌های گیت‌هاب"
+
+#: includes/admin/widgets.php:155
+msgid "About"
+msgstr "درباره ما"
+
+#: includes/settings.php:287 includes/settings.php:295
+#: includes/settings.php:303 includes/settings.php:311
+#: includes/settings.php:319 includes/settings.php:327
+#: includes/settings.php:335 includes/settings.php:343
+msgid "Active"
+msgstr "فعال"
+
+#: includes/widget/widget_archive.php:75
+msgid "Weekly"
+msgstr "هفتگی"
+
+#: includes/views/html-about.php:67
+msgid "Parsa Kafi"
+msgstr "پارسا کافی"
+
+#: includes/views/html-about.php:57
+msgid "Mobin Ghasempoor"
+msgstr "مبین قاسم‌پور"
+
+#: includes/admin/widgets.php:143
+msgid "WordPress Parsi"
+msgstr "وردپرس پارسی"
+
+#: includes/admin/widgets.php:99
+msgid "What is this?"
+msgstr "این چیست؟"
+
+#: includes/admin/widgets.php:74
+msgid "WP Parsidate"
+msgstr "WP Parsidate"
+
+#. translators: If a Rosetta site exists (e.g. https://es.wordpress.org/news/),
+#. then use that. Otherwise, leave untranslated.
+#: includes/admin/widgets.php:167
+msgctxt "Sponsership plans"
+msgid "https://wp-parsi.com/sponser/"
+msgstr "https://wp-parsi.com/sponser/"
+
+#: includes/plugins/wc-cities/wc-city-select.php:98
+msgid "required"
+msgstr "ضروری"
+
+#: includes/plugins/wc-gateways/wc-gateways.php:87
+msgid "Payment gateways"
+msgstr "درگاه‌های پرداخت"
+
+#: includes/plugins/wc-gateways/wc-gateways.php:31
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:22
+#: assets/js/wc-pg-blocks/wpp-wc-parsian-pg.js:3
+msgid "Parsian Bank"
+msgstr "بانک پارسیان"
+
+#: includes/plugins/wc-gateways/wc-gateways.php:32
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:23
+#: assets/js/wc-pg-blocks/wpp-wc-pasargad-pg.js:3
+msgid "Pasargad Bank"
+msgstr "بانک پاسارگاد"
+
+#: includes/plugins/wc-gateways/wpp-mellat-gateway.php:25
+#: assets/js/wc-pg-blocks/wpp-wc-mellat-pg.js:3
+msgid "Mellat Bank"
+msgstr "بانک ملت"
+
+#: includes/plugins/wc-gateways/wpp-mellat-gateway.php:82
+#: includes/plugins/wc-gateways/wpp-melli-gateway.php:83
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:59
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:68
+msgid "Gateway title"
+msgstr "عنوان درگاه پرداخت"
+
+#: includes/plugins/wc-gateways/wpp-mellat-gateway.php:76
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:54
+msgid "Gateway password"
+msgstr "رمز عبور درگاه پرداخت"
+
+#: includes/plugins/wc-gateways/wpp-mellat-gateway.php:70
+msgid "Gateway user name"
+msgstr "نام کاربری درگاه پرداخت"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:272
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:357
+msgid "Back to checkout"
+msgstr "بازگشت به تسویه حساب"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:72
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:81
+msgid "Successful payment message"
+msgstr "پیام پرداخت موفقیت‌آمیز"
+
+#: includes/plugins/wc-gateways/wpp-mellat-gateway.php:88
+#: includes/plugins/wc-gateways/wpp-melli-gateway.php:89
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:65
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:74
+msgid "Gateway description"
+msgstr "توضیحات درگاه پرداخت"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:316
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:317
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:324
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:401
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:402
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:409
+msgid "The order number is incorrect"
+msgstr "شماره سفارش نادرست است"
+
+#: includes/views/html-about.php:47
+msgid "HamidReza Yazdani"
+msgstr "حمیدرضا یزدانی"
+
+#: includes/views/html-about.php:28 includes/views/html-about.php:38
+#: includes/views/html-about.php:48 includes/views/html-about.php:58
+#: includes/views/html-about.php:68
+msgid "Developer"
+msgstr "توسعه‌دهنده"
+
+#: includes/views/html-about.php:37
+msgid "Saeed Fard"
+msgstr "سعید فرد"
+
+#: includes/views/html-about.php:78
+msgid "DevOps"
+msgstr "دواپس"
+
+#: includes/tools.php:27
+msgid "Today:&nbsp;"
+msgstr "امروز:&nbsp;"
+
+#: includes/views/html-about.php:27
+msgid "Morteza Geransayeh"
+msgstr "مرتضی گرانسایه"
+
+#: includes/settings.php:238
+msgid "Pashto"
+msgstr "پشتو"
+
+#: includes/settings.php:237
+msgid "Kurdish"
+msgstr "کردی"
+
+#: includes/settings.php:236
+msgid "Dari"
+msgstr "دری"
+
+#: includes/settings.php:373
+msgid "Advanced Tools"
+msgstr "ابزارهای پیشرفته"
+
+#: includes/plugins/woocommerce.php:152
+msgid "Phone number validation"
+msgstr "اعتبارسنجی شماره تلفن"
+
+#: includes/plugins/woocommerce.php:145
+msgid "Postcode validation"
+msgstr "اعتبارسنجی کدپستی"
+
+#: includes/settings.php:232
+msgid "Months name type"
+msgstr "نوع نام ماه‌ها"
+
+#: includes/settings.php:235
+msgid "Persian"
+msgstr "فارسی"
+
+#: includes/views/html-about.php:77
+msgid "Mohsen Ghiasi"
+msgstr "محسن غیاثی"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:452
+msgid "Tracking number:"
+msgstr "شماره پیگیری:"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:452
+msgid "Payment was successful."
+msgstr "پرداخت موفقیت آمیز بود."
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:353
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:354
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:438
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:439
+msgid "Payment was not made"
+msgstr "پرداخت نمی‌تواند ایجاد شود"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:343
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:428
+msgid "Error sending to the bank"
+msgstr "خطا در ارسال به بانک"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:308
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:393
+msgid "The order has already been paid"
+msgstr "سفارش در حال حاضر پرداخت شده است"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:280
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:365
+msgid "Try again"
+msgstr "دوباره تلاش کنید"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:276
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:278
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:361
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:363
+msgid "Temporary error in payment"
+msgstr "خطای موقت در پرداخت"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:244
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:328
+msgid "The card is limited"
+msgstr "کارت محدود شده است"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:239
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:323
+msgid "The card is invalid"
+msgstr "کارت نامعتبر است"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:208
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:292
+msgid "Server error"
+msgstr "خطای سرور"
+
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:207
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:291
+msgid "The merchant is inactive"
+msgstr "مرچنت کد غیرفعال است"
+
+#: includes/admin/widgets.php:115
+msgid "Loading Sponsors"
+msgstr "در حال بارگذاری اسپانسرها"
+
+#: includes/admin/widgets.php:109
+msgid "How can I become a sponsor?"
+msgstr "چگونه می‌توانم اسپانسر شوم؟"
+
+#: includes/admin/widgets.php:168
+msgid "Sponser"
+msgstr "اسپانسر"
+
+#. translators: Hidden accessibility text.
+#: includes/admin/widgets.php:145 includes/admin/widgets.php:157
+#: includes/admin/widgets.php:170
+msgid "(opens in a new tab)"
+msgstr "(در یک زبانه جدید باز می‌شود)"
+
+#: includes/plugins/wc-cities/wc-city-select.php:137
+#: includes/plugins/wc-cities/wc-city-select.php:179
+msgid "Select an option&hellip;"
+msgstr "انتخاب گزینه&hellip;"
+
+#: includes/plugins/wc-gateways/wpp-mellat-gateway.php:64
+#: includes/plugins/wc-gateways/wpp-melli-gateway.php:65
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:56
+msgid "Terminal No."
+msgstr "شماره ترمینال"
+
+#: includes/plugins/wc-gateways/wpp-mellat-gateway.php:27
+#: includes/plugins/wc-gateways/wpp-melli-gateway.php:27
+#: includes/plugins/wc-gateways/wpp-parsian-gateway.php:24
+#: includes/plugins/wc-gateways/wpp-pasargad-gateway.php:25
+msgid "payment gateway (By WP-Parsidate)"
+msgstr "درگاه پرداخت (توسط WP-Parsidate)"
+
+#: includes/settings.php:272
+msgid "By enabling this option, the Vazir font will be enable in whole admin area."
+msgstr "با فعال‌سازی این گزینه، فونت وزیر در بخش مدیریت فعال می‌شود."
+
+#: includes/settings.php:268
+msgid "Vazir Font"
+msgstr "فونت وزیر"
+
+#: includes/widget/widget_calendar.php:57
+msgid "Dark Mode"
+msgstr "حالت تیره"
+
+#: includes/widget/widget_calendar.php:54
+msgid "Light Mode"
+msgstr "حالت روشن"
+
+#: includes/widget/widget_calendar.php:49
+msgid "Theme color:"
+msgstr "رنگ پوسته"
+
+#: includes/widget/widget_archive.php:51
+msgid "How to display"
+msgstr "نحوه نمایش"
+
+#: includes/widget/widget_archive.php:42
+msgid "Title"
+msgstr "عنوان"
+
+#: includes/settings.php:264
+msgid "By enabling this option, the uncompressed version of the JS and CSS files will be loaded."
+msgstr "با فعال‌سازی این گزینه، نسخه فشرده نشده از CSS و JS فراخوانی خواهد شد."
+
+#: includes/settings.php:260
+msgid "Debug Mode"
+msgstr "حالت اشکال‌زدایی"
+
+#: includes/settings.php:248
+msgid "By enabling this, Widget Block Editor disabled"
+msgstr "با فعال‌سازی این گزینه، ویرایشگر بلوک ابزارک غیرفعال خواهد شد."
+
+#: includes/settings.php:244
+msgid "Disable Widget Block"
+msgstr "غیرفعال‌سازی ویرایشگر بلوک ابزارک"
+
+#: includes/plugins/woocommerce.php:487
+msgid "Expiry date"
+msgstr "تاریخِ انقضا"
+
+#: includes/plugins/acf.php:79
+msgid "Jalali Datepicker"
+msgstr "انتخابگر تاریخ جلالی"
+
+#: includes/plugins/acf.php:86
+msgid "Save dates in Jalali format (Not recommended)"
+msgstr "ذخیره‎سازی اطلاعات در حالت جلالی (توصیه نمی‌شود)"
+
+#: includes/plugins/acf.php:74
+msgid "Advanced Custom Fields (ACF)"
+msgstr "فیلدهای سفارشی پیشرفته (ACF)"
+
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v5.php:49
+msgid "Display time picker in 24 or 12 hours format"
+msgstr "نمایش انتخابگر زمان در حالت 24 یا 12 ساعت"
+
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v5.php:48
+msgid "Time Format"
+msgstr "ساختار زمان"
+
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v5.php:31
+msgid "Error! Please select a valid time."
+msgstr "خطا! لطفا یک زمان متعبر را انتخاب کنید."
+
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v5.php:21
+msgid "Time"
+msgstr "زمان"
+
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v4.php:45
+msgid "Preview Size"
+msgstr "اندازه پیش‌نمایش"
+
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v5.php:30
+msgid "Error! Please select a valid date."
+msgstr "خطا! لطفا یک تاریخ متعبر را انتخاب کنید."
+
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v4.php:46
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v5.php:48
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v5.php:60
+msgid "Show custom placeholder"
+msgstr "نمایش نگهدارنده متن دلخواه"
+
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v4.php:45
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v5.php:47
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v5.php:59
+msgid "Placeholder"
+msgstr "نگهدارنده متن"
+
+#: includes/admin/widgets.php:218
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v4.php:22
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v5.php:23
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v5.php:23
+msgid "Parsidate"
+msgstr "Parsidate"
+
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v4.php:20
+#: includes/plugins/acf-fields/class-wpp-acf-datepicker-v5.php:21
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v4.php:20
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v4.php:22
+msgid "Date"
+msgstr "تاریخ"
+
+#: includes/plugins/acf-fields/class-wpp-acf-timepicker-v4.php:46
+msgid "Thumbnail is advised"
+msgstr "بندانگشتی توصیه می‌شود"
+
+#: includes/widget/widget_calendar.php:39
+msgid "Title:"
+msgstr "عنوان:"
+
+#. Author of the plugin
+#: wp-parsidate.php languages/common-strings.php:4
+msgid "WP-Parsi Team"
+msgstr "تیم وردپرس پارسی"
+
+#: wp-parsidate.php:207
+msgid "settings"
+msgstr "تنظیمات"
+
+#: includes/admin/lists-fix.php:106
+msgid "Show All Dates"
+msgstr "نمایش همه‌ی تاریخ‌ها"
+
+#: includes/general.php:76
+msgid "<div class=\"updated wpp-message\"><p>ParsiDate activated, you may need to configure it to work properly. <a href=\"%s\">Go to configuration page</a> &ndash; <a href=\"%s\">Dismiss</a></p></div>"
+msgstr "<div class=\"updated wpp-message\"><p>وردپرس پارسی فعال شد! برای کارکردن افزونه نیاز به پیکربندی آن دارید. <a href=\"%s\">برگه‌ی پیکربندی</a> &ndash; <a href=\"%s\">بی‌خیال</a></p></div>"
+
+#: includes/plugins/disable.php:177
+msgid "Enable"
+msgstr "فعال"
+
+#: includes/plugins/disable.php:178
+msgid "Disable"
+msgstr "غیرفعال"
+
+#: includes/plugins/edd.php:61
+msgid "Easy Digital Downloads"
+msgstr "Easy Digital Downloads"
+
+#: includes/plugins/edd.php:66 includes/plugins/woocommerce.php:117
+msgid "Fix prices"
+msgstr "تصحیح قیمت‌ها"
+
+#: includes/plugins/edd.php:73
+msgid "Replace ریال with RIAL"
+msgstr "جایگزینی ریال با RIAL"
+
+#: includes/plugins/woocommerce.php:112
+msgid "WooCommerce"
+msgstr "ووکامرس"
+
+#: includes/settings.php:134
+msgid "%s Core"
+msgstr "%s هسته"
+
+#: includes/settings.php:135
+msgid "%s Converts"
+msgstr "%s تبدیل"
+
+#: includes/settings.php:208
+msgid "Change Locale in admin"
+msgstr "تغییر زبان مدیریت"
+
+#: includes/settings.php:216
+msgid "Change Locale in theme"
+msgstr "تغییر زبان سایت"
+
+#: includes/settings.php:224
+msgid "Shamsi date"
+msgstr "تاریخ خورشیدی"
+
+#: includes/settings.php:228
+msgid "By enabling this, Dates will convert to Shamsi (Jalali) dates"
+msgstr "با فعال‌کردن این گزینه، تاریخ‌ها به صورت تاریخ خورشیدی (جلالی) درمی‌آیند"
+
+#: includes/settings.php:252
+msgid "Move page to submenu?"
+msgstr "انتقال این برگه به زیرمنو؟"
+
+#: includes/settings.php:278
+msgid "Persian digits"
+msgstr "رقم‌های پارسی"
+
+#: includes/settings.php:283
+msgid "Page title"
+msgstr "در عنوان صفحه"
+
+#: includes/settings.php:291
+msgid "Post title"
+msgstr "در عنوان نوشته‌ها"
+
+#: includes/settings.php:299
+msgid "Post content"
+msgstr "در محتوای نوشته‌ها"
+
+#: includes/settings.php:307
+msgid "Post excerpt"
+msgstr "در خلاصه‌ی نوشته‌ها"
+
+#: includes/settings.php:315
+msgid "Comments text"
+msgstr "در نوشته‌ی دیدگاه‌ها"
+
+#: includes/settings.php:323
+msgid "Comments count"
+msgstr "تعداد دیدگاه‌ها"
+
+#: includes/settings.php:331
+msgid "Dates"
+msgstr "تاریخ‌ها"
+
+#: includes/settings.php:339
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+#: includes/settings.php:351
+msgid "Fix arabic characters"
+msgstr "تصحیح حروف عربی"
+
+#: includes/settings.php:355
+msgid "Fixes arabic characters caused by wrong keyboard layouts"
+msgstr "این گزینه، حروف عربی را در کل سیستم به حروف فارسی تصحیح می‌کند<br>برای مثال ٤/٥/٦ به ۴ / ۵ / ۶ و ك / ي به ک / ی"
+
+#: includes/settings.php:359
+msgid "Fix permalinks dates"
+msgstr "تبدیل تاریخ در پیوندهای یکتا"
+
+#: includes/settings.php:363
+msgid "By enabling this, dates in permalinks converted to Shamsi (Jalali) date"
+msgstr "با فعال‌کردن این گزینه، تاریخ‌ها در پیوندهای یکتا به تاریخ خورشیدی (جلالی) تبدیل می‌شوند"
+
+#: includes/settings.php:634
+msgid "Upload File"
+msgstr "آپلود فایل"
+
+#: includes/widget/widget_archive.php:15 includes/widget/widget_archive.php:16
+#: includes/widget/widget_archive.php:18 includes/widget/widget_archive.php:19
+#: includes/widget/widget_archive.php:36 includes/widget/widget_archive.php:46
+#: includes/widget/widget_archive.php:133
+#: includes/widget/widget_archive.php:159
+msgid "Jalali Date Archives"
+msgstr "بایگانی تاریخ خورشیدی"
+
+#: includes/widget/widget_archive.php:57
+msgid "Yearly"
+msgstr "سالانه"
+
+#: includes/widget/widget_archive.php:66
+msgid "Monthly"
+msgstr "ماهانه"
+
+#: includes/widget/widget_archive.php:84
+msgid "Daily"
+msgstr "روزانه"
+
+#: includes/widget/widget_archive.php:95
+msgid "Show post counts"
+msgstr " نمايش تعداد نوشته‌ها "
+
+#: includes/widget/widget_archive.php:105
+msgid "Display as dropdown"
+msgstr " نمايش به صورت ليست بازشو"
+
+#: includes/widget/widget_calendar.php:14
+#: includes/widget/widget_calendar.php:16
+#: includes/widget/widget_calendar.php:30
+msgid "Jalali Date Calender"
+msgstr "گاه‌شمار تاریخ خورشیدی"
+
+#: includes/widget/widget_archive.php:111
+#: includes/widget/widget_calendar.php:34
+msgid "For use widget, active \"Fix permalinks dates\" option in plugin settings."
+msgstr "برای استفاده از ابزارک، گزینه \"تبدیل تاریخ در پیوندهای یکتا\" را در تنظیمات افزونه فعال کنید."
+
+#: includes/plugins/disable.php:193
+msgid "Enter hook,class,function to remove parsidate filter from it"
+msgstr "نام هوک، کلاس و تابع موردنظر را جهت رفع فیلتر پارسی‌دیت وارد کنید"
+
+#: includes/plugins/disable.php:189
+msgid "Hook list"
+msgstr "لیست فیلترها"
+
+#: includes/plugins/disable.php:184
+msgid "Hook deactivator"
+msgstr "غیرفعال کردن فیلتر وردپرس پارسی"
+
+#: includes/settings.php:220
+msgid "This option change WordPress locale to Persian in theme"
+msgstr "این گزینه باعث تغییر زبان سایت می‌شود"
+
+#: includes/settings.php:212
+msgid "This option change WordPress locale to Persian in Admin"
+msgstr "این گزینه باعث تغییر زبان مدیریت می‌شود"
+
+#. Author URI of the plugin
+#: wp-parsidate.php
+msgid "https://wp-parsi.com/"
+msgstr "https://wp-parsi.com/"
+
+#: includes/settings.php:137
+msgid "%s Plugins compatibility"
+msgstr "%s هماهنگی با افزونه‌ها"
+
+#: includes/settings.php:256
+msgid "By enabling this option, page item will be moved to Settings menu as submenu."
+msgstr "با فعال‌سازی این گزینه، این برگه پیکربندی پلاگین به زیرفهرست \"تنظیمات\" منتقل می‌شود."
+
+#. Plugin URI of the plugin
+#: wp-parsidate.php
+msgid "https://wp-parsi.com/support/"
+msgstr "https://wp-parsi.com/support/"
+
+#. Plugin Name of the plugin
+#: wp-parsidate.php languages/common-strings.php:2
+msgid "WP-Parsidate"
+msgstr "افزونه پارسی‌دیت"
+
+#. Description of the plugin
+#: wp-parsidate.php languages/common-strings.php:3
+msgid "Persian package for WordPress, Adds full RTL and Shamsi (Jalali) support for: posts, comments, pages, archives, search, categories, permalinks and all admin sections and TinyMce editor, lists, quick editor. This package has Jalali archive widget."
+msgstr "افزونه پارسی دیت وردپرس فارسی، اضافه‌کردن پشتیبانی کامل راست‌به‌چپ و تاریخ خورشیدی برای وردپرس و ووکامرس فارسی. پارسی‌دیت از نوشته‌ها، دیدگاه‌ها، برگه‌ها، بایگانی‌ها، جستجو‌ها و دسته‌بندی‌ها و پیوندهای یکتا پشتیبانی می‌کند و تمام قسمت‌های مدیریت و ویرایشگر را پارسی می‌کند. این افزونه هم‌چنین یک ابزارک بایگانی شمسی نیز دارد و از ووکامرس و بلاک ادیتور به صورت کامل پشتیبانی می‌کند."
+
+#: includes/settings.php:24 includes/settings.php:25 includes/settings.php:32
+#: includes/settings.php:33 includes/settings.php:662
+msgid "Parsi Settings"
+msgstr "پارسی دیت"

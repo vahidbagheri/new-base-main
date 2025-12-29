@@ -1,0 +1,229 @@
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2015-10-28 13:40+0330\n"
+"PO-Revision-Date: 2025-10-11 15:16+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+msgid "Username or password is wrong!"
+msgstr "نام کاربری یا کلمه عبور اشتباه است!"
+
+msgid "Header"
+msgstr "سربرگ"
+
+msgid "Site Settings"
+msgstr "تنظیمات سایت"
+
+msgid "Default feature image"
+msgstr "تصویر شاخص پیشفرض"
+
+msgid "Update"
+msgstr "به‌روزرسانی"
+
+msgid "Updated Options"
+msgstr "تنظیمات به‌روز شدند"
+
+msgid "Header and Footer Settings"
+msgstr "تنظیمات سربرگ و پاورقی"
+
+msgid "Header and Footer"
+msgstr "سربرگ و پاورقی"
+
+msgid "Logo"
+msgstr "لوگو"
+
+msgid "Site title"
+msgstr "عنوان سایت"
+
+msgid "Site description"
+msgstr "توضیح سایت"
+
+msgid "General Pages Settings"
+msgstr "تنظیمات عمومی برگه‌ها"
+
+msgid "Top banner - Desktop"
+msgstr "بنر ابتدایی - دسکتاپ"
+
+msgid "Top banner - Mobile"
+msgstr "بنر ابتدایی - موبایل"
+
+msgid "Blog Home Settings"
+msgstr "تنظیمات برگه اصلی مجله"
+
+msgid "Page sections"
+msgstr "بخش‌های برگه"
+
+msgid "Grid layout"
+msgstr "طرح شبکه‌ای"
+
+msgid "Category posts - Design 1"
+msgstr "مطالب دسته‌بندی - طرح 1"
+
+msgid "Category posts - Design 2"
+msgstr "مطالب دسته‌بندی - طرح 2"
+
+msgid "Category posts - Design 3"
+msgstr "مطالب دسته‌بندی - طرح 3"
+
+msgid "Category posts - Design 4"
+msgstr "مطالب دسته‌بندی - طرح 4"
+
+msgid "Section title"
+msgstr "عنوان بخش"
+
+msgid "Description"
+msgstr "توضیحات"
+
+msgid "New section"
+msgstr "بخش جدید"
+
+msgid "Select category"
+msgstr "انتخاب دسته‌بندی"
+
+msgid "View archive"
+msgstr "مشاهده آرشیو"
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "Toggle navigation"
+msgstr "باز و بسته کردن منو"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Breadcrumb"
+msgstr "مسیر فعلی"
+
+msgid "Copy link"
+msgstr "کپی کردن لینک"
+
+msgid "Read post"
+msgstr "مطالعه مطلب"
+
+msgid "Read time"
+msgstr "زمان مطالعه"
+
+msgid "%s Minute"
+msgstr "%s دقیقه"
+
+msgid "%s Minutes"
+msgstr "%s دقیقه"
+
+msgid "No items found to display!"
+msgstr "آیتمی برای نمایش یافت نشد!"
+
+msgid "Applied filters"
+msgstr "فیلترهای اعمال شده"
+
+msgid "Delete filters"
+msgstr "حذف فیلترها"
+
+msgid "More items"
+msgstr "موارد بیشتر"
+
+msgid "Table of Contents"
+msgstr "فهرست مطالب"
+
+msgid "About %s minutes of reading"
+msgstr "حدود %s دقیقه مطالعه"
+
+msgid "Related Posts"
+msgstr "مطالب مرتبط"
+
+msgid "Latest Posts"
+msgstr "جدیدترین مطالب"
+
+msgid "No comments"
+msgstr "بدون دیدگاه"
+
+msgid "1 Comment"
+msgstr "۱ دیدگاه"
+
+msgid "% Comments"
+msgstr "% دیدگاه"
+
+msgid "« Previous"
+msgstr "« قبلی"
+
+msgid "Next »"
+msgstr "بعدی »"
+
+msgid "Leave a Comment"
+msgstr "ارسال دیدگاه"
+
+msgid "Your Name"
+msgstr "نام شما"
+
+msgid "Your Email"
+msgstr "ایمیل شما"
+
+msgid "Your Message"
+msgstr "پیام شما"
+
+msgid "Send"
+msgstr "ارسال"
+
+msgid "⏳ Your comment is awaiting moderation..."
+msgstr "⏳ دیدگاه شما در انتظار تأیید است..."
+
+msgid "Reply"
+msgstr "پاسخ"
+
+msgid "No posts found."
+msgstr "هیچ مطلبی یافت نشد."
+
+msgid "Search results for:"
+msgstr "نتایج جستجو برای:"
+
+msgid "Read more"
+msgstr "ادامه مطلب"
+
+msgid "Back to home"
+msgstr "بازگشت به خانه"
+
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+msgid "Tags"
+msgstr "برچسب‌ها"
+
+msgid "Author"
+msgstr "نویسنده"
+
+msgid "Archives"
+msgstr "بایگانی‌ها"
+
+msgid "Page not found"
+msgstr "صفحه یافت نشد"
+
+msgid "Oops! That page can’t be found."
+msgstr "اوه! صفحه مورد نظر پیدا نشد."
+
+msgid "It looks like nothing was found at this location."
+msgstr "به نظر می‌رسد چیزی در این مکان یافت نشد."
+
+msgid "Back to blog"
+msgstr "بازگشت به وبلاگ"
+
+msgid "%s min read"
+msgstr "%s دقیقه مطالعه"
+
+msgid "No categories"
+msgstr "بدون دسته‌بندی"
+
+msgid "Excerpt"
+msgstr "خلاصه"
+
+msgid "Post title"
+msgstr "عنوان نوشته"

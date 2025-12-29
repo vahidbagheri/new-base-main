@@ -1,0 +1,82 @@
+{
+    "key": "group_68b69719a547a",
+    "title": "General Pages Settings",
+    "fields": [
+        {
+            "key": "field_68b6971f9afe8",
+            "label": "Top banner - Desktop",
+            "name": "desktop-top-banner",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "webp, jpg 1320x468",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": 1320,
+            "min_height": 468,
+            "min_size": "",
+            "max_width": 1320,
+            "max_height": 468,
+            "max_size": "",
+            "mime_types": "webp,jpg",
+            "allow_in_bindings": 1,
+            "preview_size": "full"
+        },
+        {
+            "key": "field_68b6bf2e7759b",
+            "label": "Top banner - Mobile",
+            "name": "mobile-top-banner",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "webp, jpg 570x202",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": 570,
+            "min_height": 202,
+            "min_size": "",
+            "max_width": 570,
+            "max_height": 202,
+            "max_size": "",
+            "mime_types": "webp,jpg",
+            "allow_in_bindings": 1,
+            "preview_size": "full"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1756819640
+}

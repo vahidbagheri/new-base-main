@@ -1,0 +1,28 @@
+/*!
+Theme Name: Citynet
+Theme URI: https://citynet.ir/
+Author: the Citynet team
+Author URI: https://citynet.ir/
+Description: 
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: citynet
+Tags:
+*/
+
+@charset "UTF-8";
+
+@use "scss/_vars";
+@use "scss/_mixins";
+@use "scss/_plugins";
+@use "scss/_general";
+@use "scss/_header";
+@use "scss/_home";
+@use "scss/_footer";
+@use "scss/_inside";
+@use "scss/_small";
+@use "scss/_medium";
+@use "scss/_large";
+@use "scss/_xlarge";
+@use "scss/_xxlarge";

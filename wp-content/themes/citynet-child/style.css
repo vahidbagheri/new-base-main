@@ -1,0 +1,97 @@
+/*!
+Theme Name: Citynet Child
+Theme URI: https://citynet.ir/
+Description: Child theme for the Citynet theme.
+Author: the Citynet team
+Author URI: https://citynet.ir/
+Template: citynet
+Version: 1.0.0
+Tags:
+*/
+:root {
+  --bs-primary: #e5760e;
+  --bs-primary-rgb: 229, 118, 14;
+  --bs-primary-bg-subtle: rgb(251.1, 234.45, 218.85);
+  --bs-primary-border-subtle: rgb(244.6, 200.2, 158.6);
+  --bs-primary-text-emphasis: rgb(160.3, 82.6, 9.8);
+}
+
+.btn-primary {
+  --bs-btn-color: #212529;
+  --bs-btn-bg: #e5760e;
+  --bs-btn-border-color: #e5760e;
+  --bs-btn-hover-color: #212529;
+  --bs-btn-hover-bg: rgb(229.026, 118.137, 14.241);
+  --bs-btn-hover-border-color: rgb(229.026, 118.137, 14.241);
+  --bs-btn-focus-shadow-rgb: 199.6, 105.85, 18.05;
+  --bs-btn-active-color: #212529;
+  --bs-btn-active-bg: rgb(229.026, 118.137, 14.241);
+  --bs-btn-active-border-color: rgb(229.026, 118.137, 14.241);
+  --bs-btn-active-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-color: #212529;
+  --bs-btn-disabled-bg: #e5760e;
+  --bs-btn-disabled-border-color: #e5760e;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #e5760e;
+  --bs-btn-border-color: #e5760e;
+  --bs-btn-hover-color: #212529;
+  --bs-btn-hover-bg: #e5760e;
+  --bs-btn-hover-border-color: #e5760e;
+  --bs-btn-focus-shadow-rgb: 229, 118, 14;
+  --bs-btn-active-color: #212529;
+  --bs-btn-active-bg: #e5760e;
+  --bs-btn-active-border-color: #e5760e;
+  --bs-btn-active-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-color: #e5760e;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #e5760e;
+  --bs-gradient: none;
+}
+
+:root {
+  --bs-secondary: #9e1bea;
+  --bs-secondary-rgb: 158, 27, 234;
+  --bs-secondary-bg-subtle: rgb(240.45, 220.8, 251.85);
+  --bs-secondary-border-subtle: rgb(216.2, 163.8, 246.6);
+  --bs-secondary-text-emphasis: rgb(110.6, 18.9, 163.8);
+}
+
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9e1bea;
+  --bs-btn-border-color: #9e1bea;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(157.842, 26.973, 233.766);
+  --bs-btn-hover-border-color: rgb(157.842, 26.973, 233.766);
+  --bs-btn-focus-shadow-rgb: 172.55, 61.2, 237.15;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(157.842, 26.973, 233.766);
+  --bs-btn-active-border-color: rgb(157.842, 26.973, 233.766);
+  --bs-btn-active-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #9e1bea;
+  --bs-btn-disabled-border-color: #9e1bea;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #9e1bea;
+  --bs-btn-border-color: #9e1bea;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #9e1bea;
+  --bs-btn-hover-border-color: #9e1bea;
+  --bs-btn-focus-shadow-rgb: 158, 27, 234;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #9e1bea;
+  --bs-btn-active-border-color: #9e1bea;
+  --bs-btn-active-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-color: #9e1bea;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #9e1bea;
+  --bs-gradient: none;
+}
+
+.form-control:focus {
+  border-color: #9e1bea;
+}/*# sourceMappingURL=style.css.map */

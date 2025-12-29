@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+#header-menu {
+    .sub-menu { list-style: none; }
+    > .menu-item {
+        &.wpml-ls-item {
+            .wpml-ls-flag {
+                margin-right: 3px;
+                vertical-align: baseline;
+            }
+        }
+    }
+    &.cnwp-desktop {
+        > .menu-item {
+            > .nav-link { padding: 15px var(--bs-nav-link-padding-x); }
+            &.menu-item-has-children {
+                > .nav-link {
+                    padding: 15px calc(var(--bs-nav-link-padding-x) * 2) 15px var(--bs-nav-link-padding-x);
+                    &:after {
+                        content: "\eb0c";
+                        position: absolute;
+                        margin-left: 0.3em;
+                    }
+                }
+            }
+            &:first-child {
+                > .nav-link { padding-left: 0; }
+            }
+            &.mega-menu {
+                > .sub-menu {
+                    visibility: hidden;
+                    opacity: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 0;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+                    position: absolute;
+                    top: 100%;
+                    border-radius: 5px;
+                    box-shadow: var(--bs-box-shadow-sm);
+                    transition: all 0.3s;
+                    background-color: #ffffff;
+                    max-height: 70vh;
+                    overflow-y: auto;
+                    > .menu-item {
+                        width: 100%;
+                        padding: 15px;
+                        > .nav-link {
+                            color: var(--bs-primary) !important;
+                            border-bottom: 2px solid var(--bs-primary);
+                        }
+                    }
+                    .sub-menu {
+                        font-weight: 200;
+                        padding: 0;
+                        margin-top: 10px;
+                        .sub-menu { display: none; }
+                    }
+                }
+            }
+            &:not(.mega-menu) {
+                position: relative;
+                .sub-menu {
+                    visibility: hidden;
+                    opacity: 0;
+                    width: 220px;
+                    padding: 5px 0;
+                    margin: 0;
+                    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+                    position: absolute;
+                    top: 100%;
+                    border-radius: 5px;
+                    box-shadow: var(--bs-box-shadow-sm);
+                    transition: all 0.3s;
+                    background-color: #ffffff;
+                    font-weight: 200;
+                    > .menu-item {
+                        &.menu-item-has-children {
+                            position: relative;
+                            > .nav-link {
+                                display: flex;
+                                &:after {
+                                    content: "\eb15";
+                                    margin: auto 0 auto auto;
+                                }
+                            }
+                        }
+                    }
+                    .sub-menu {
+                        top: -6px;
+                        left: 100%;
+                    }
+                }
+            }
+        }
+        .menu-item {
+            &.menu-item-has-children {
+                > .nav-link {
+                    &:after { font-family: CitynetV3; }
+                }
+                &:hover {
+					> .sub-menu {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+            }
+            &:hover {
+                > .nav-link { color: var(--bs-primary) !important; }
+            }
+        }
+        .sub-menu { z-index: 1; }
+        &.cnwp-in-container {
+            > .menu-item {
+                &.mega-menu {
+                    > .sub-menu { width: 100%; }
+                }
+            }
+        }
+        &.cnwp-not-in-container {
+            > .menu-item {
+                &.mega-menu {
+                    > .sub-menu { width: calc(100% - 2rem); }
+                }
+            }
+        }
+    }
+
+    &.cnwp-mobile {
+        > .menu-item {
+            > .nav-link { font-weight: 600; }
+        }
+        .sub-menu-toggle {
+            margin-top: -28px;
+            transition: all 0.3s;
+        }
+        .sub-menu {
+            display: none;
+            padding-left: 1.3rem;
+            .menu-item {
+                .nav-link { font-weight: 300; }
+            }
+        }
+    }
+}

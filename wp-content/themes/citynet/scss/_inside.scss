@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.top-banner-wrapper {
+    &:after {
+        content: "";
+        background-color: rgba(0, 0, 0, 40%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+#filter-boxes-accordion {
+    top: 75px;
+    .accordion-button:not(.collapsed) { box-shadow: unset; }
+    .filter-wrapper {
+        ul { max-height: 25vh; }
+    }
+}

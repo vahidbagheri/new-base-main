@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@use "vars";
+@use "../../citynet/scss/_mixins";
+
+@include mixins.citynet-custom-color("primary", vars.$primary);
+@include mixins.citynet-custom-color("secondary", vars.$secondary);
+
+.form-control {
+    &:focus { border-color: vars.$secondary; }
+}

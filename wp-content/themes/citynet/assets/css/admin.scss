@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    &.nav-menus-php {
+        .menu-item-settings {
+            .field-css-classes {
+                label {
+                    &:after { content: 'mega-menu | item-icon-home-2'; }
+                }
+            }
+        }
+    }
+}
+
+.icl_subsubsub { float: unset !important; }

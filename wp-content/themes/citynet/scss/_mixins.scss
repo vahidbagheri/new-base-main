@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@use "sass:color";
+@use "sass:list";
+
+$white:    #fff !default;
+$black:    #000 !default;
+$color-contrast-dark: #212529 !default; // Bootstrap "body color"
+$color-contrast-light: $white !default;
+$btn-hover-bg-shade-amount: 0.1; // 10% darker
+$btn-hover-bg-tint-amount: 0.1; // 10% lighter
+$btn-hover-border-shade-amount: 0.1; // 10% darker
+$btn-hover-border-tint-amount: 0.1;  // 10% lighter
+$btn-active-bg-shade-amount: 0.1; // 10% darker
+$btn-active-bg-tint-amount: 0.1;  // 10% lighter
+$btn-active-border-shade-amount: 0.1; // 10% darker
+$btn-active-border-tint-amount: 0.1;  // 10% lighter
+$btn-active-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+$min-contrast-ratio: 4.5 !default;
+
+@function to-rgb($color) {
+  @return color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb);
+}
+
+@function tint-color($color, $percentage) {
+  @return color.mix(white, $color, $percentage * 1%);
+}
+
+@function shade-color($color, $percentage) {
+  @return color.mix(black, $color, $percentage * 1%);
+}
+
+@function luminance($color) {
+  $rgb: ();
+
+  @each $component in color.channel($color, "red", $space: rgb), color.channel($color, "green", $space: rgb), color.channel($color, "blue", $space: rgb) {
+    $component: calc($component / 255);
+    $component: if($component < 0.03928, calc($component / 12.92), pow((($component + 0.055) / 1.055), 2.4));
+    $rgb: list.append($rgb, $component);
+  }
+
+  @return list.nth($rgb, 1) * 0.2126 + list.nth($rgb, 2) * 0.7152 + list.nth($rgb, 3) * 0.0722;
+}
+
+@function opaque($background, $foreground) {
+  $alpha: color.alpha($foreground);
+
+  @return if($alpha < 1, mix($background, $foreground, $alpha * 100%), $foreground);
+}
+
+@function contrast-ratio($background, $foreground: $color-contrast-light) {
+  $l1: luminance($background);
+  $l2: luminance(opaque($background, $foreground));
+
+  @return if($l1 > $l2,
+    calc(($l1 + 0.05) / ($l2 + 0.05)),
+    calc(($l2 + 0.05) / ($l1 + 0.05))
+  );
+}
+
+@function color-contrast(
+  $background,
+  $color-contrast-dark: $color-contrast-dark,
+  $color-contrast-light: $color-contrast-light,
+  $min-contrast-ratio: $min-contrast-ratio
+) {
+  $foregrounds: $color-contrast-light, $color-contrast-dark, $white, $black;
+  $max-ratio: 0;
+  $max-ratio-color: null;
+
+  @each $color in $foregrounds {
+    $contrast-ratio: contrast-ratio($background, $color);
+    @if $contrast-ratio >= $min-contrast-ratio {
+      @return $color;
+    } @else if $contrast-ratio > $max-ratio {
+      $max-ratio: $contrast-ratio;
+      $max-ratio-color: $color;
+    }
+  }
+
+  @warn "Found no color leading to #{$min-contrast-ratio}:1 contrast ratio against #{$background}…";
+
+  @return $max-ratio-color;
+}
+
+@mixin button-variant(
+  $background,
+  $border,
+  $color: color-contrast($background),
+  $hover-background: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
+  $hover-border: if($color == $color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
+  $hover-color: color-contrast($hover-background),
+  $active-background: if($color == $color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
+  $active-border: if($color == $color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
+  $active-color: color-contrast($active-background),
+  $disabled-background: $background,
+  $disabled-border: $border,
+  $disabled-color: color-contrast($disabled-background)
+) {
+  --bs-btn-color: #{$color};
+  --bs-btn-bg: #{$background};
+  --bs-btn-border-color: #{$border};
+  --bs-btn-hover-color: #{$hover-color};
+  --bs-btn-hover-bg: #{$hover-background};
+  --bs-btn-hover-border-color: #{$hover-border};
+  --bs-btn-focus-shadow-rgb: #{to-rgb(color.mix($color, $border, 15%))};
+  --bs-btn-active-color: #{$active-color};
+  --bs-btn-active-bg: #{$active-background};
+  --bs-btn-active-border-color: #{$active-border};
+  --bs-btn-active-shadow: #{$btn-active-box-shadow};
+  --bs-btn-disabled-color: #{$disabled-color};
+  --bs-btn-disabled-bg: #{$disabled-background};
+  --bs-btn-disabled-border-color: #{$disabled-border};
+}
+
+@mixin button-outline-variant(
+  $color,
+  $color-hover: color-contrast($color),
+  $active-background: $color,
+  $active-border: $color,
+  $active-color: color-contrast($active-background)
+) {
+  --bs-btn-color: #{$color};
+  --bs-btn-border-color: #{$color};
+  --bs-btn-hover-color: #{$color-hover};
+  --bs-btn-hover-bg: #{$active-background};
+  --bs-btn-hover-border-color: #{$active-border};
+  --bs-btn-focus-shadow-rgb: #{to-rgb($color)};
+  --bs-btn-active-color: #{$active-color};
+  --bs-btn-active-bg: #{$active-background};
+  --bs-btn-active-border-color: #{$active-border};
+  --bs-btn-active-shadow: #{$btn-active-box-shadow};
+  --bs-btn-disabled-color: #{$color};
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #{$color};
+  --bs-gradient: none;
+}
+
+@mixin citynet-custom-color($name, $color) {
+    $rgb: to-rgb($color);
+    :root {
+        // Core theme variables
+        --bs-#{$name}: #{$color};
+        --bs-#{$name}-rgb: #{$rgb};
+
+        // Subtle variants (alerts, badges, tables, etc.)
+        --bs-#{$name}-bg-subtle: #{tint-color($color, 85%)};
+        --bs-#{$name}-border-subtle: #{tint-color($color, 60%)};
+        --bs-#{$name}-text-emphasis: #{shade-color($color, 30%)};
+    }
+    .btn-#{$name} {
+      @include button-variant($color, $color);
+    }
+    .btn-outline-#{$name} {
+      @include button-outline-variant($color);
+    }
+}

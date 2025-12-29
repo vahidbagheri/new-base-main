@@ -1,0 +1,27 @@
+/*!
+Theme Name: Citynet Child
+Theme URI: https://citynet.ir/
+Description: Child theme for the Citynet theme.
+Author: the Citynet team
+Author URI: https://citynet.ir/
+Template: citynet
+Version: 1.0.0
+Tags:
+*/
+
+@charset "UTF-8";
+
+@use "scss/_vars";
+@use "../citynet/scss/_mixins";
+@use "scss/_cnwp_bootstrap";
+@use "scss/_plugins";
+@use "scss/_general";
+@use "scss/_header";
+@use "scss/_home";
+@use "scss/_footer";
+@use "scss/_inside";
+@use "scss/_small";
+@use "scss/_medium";
+@use "scss/_large";
+@use "scss/_xlarge";
+@use "scss/_xxlarge";
