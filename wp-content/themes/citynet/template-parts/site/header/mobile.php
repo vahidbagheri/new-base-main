@@ -30,8 +30,10 @@ $header_classes = $header_classes? implode( ' ', array_unique( $header_classes )
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
             </div>
         </div>
+            
 
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
             id="site-mobile-header" aria-labelledby="site-mobile-header-label"
@@ -64,4 +66,7 @@ $header_classes = $header_classes? implode( ' ', array_unique( $header_classes )
 
         </div>
     </div>
+            <? if( ! is_user_logged_in() ) :  ?>
+                <?= do_shortcode( '[mobile_otp_login]' ); ?>
+            <? endif; ?>
 </header>

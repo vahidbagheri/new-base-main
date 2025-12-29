@@ -1,0 +1,266 @@
+/**
+ * MOTP CSS (App-like Modal - RTL + Responsive)
+ */
+
+:root{
+  --motp-radius: 18px;
+  --motp-border: 1px solid rgba(0,0,0,.10);
+  --motp-shadow: 0 18px 55px rgba(0,0,0,.25);
+
+  --motp-green: #16a34a;
+  --motp-green-weak: #dcfce7;
+  --motp-red: #dc2626;
+  --motp-red-weak: #fee2e2;
+
+  --motp-text: #0f172a;
+  --motp-muted: rgba(15,23,42,.65);
+  --motp-surface: #fff;
+  --motp-surface-2: #f8fafc;
+}
+
+.motp{ display:inline-block; direction: rtl; font-family: inherit; }
+.motp__trigger{
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: var(--motp-border);
+  background: var(--motp-surface);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.motp__backdrop{
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(2px);
+  z-index: 9998;
+}
+
+.motp__modal{
+  position: fixed; inset: 0;
+  z-index: 9999;
+  display:flex; align-items:center; justify-content:center;
+  padding: 16px;
+}
+
+.motp__card{
+  width: min(520px, 100%);
+  background: var(--motp-surface);
+  border-radius: var(--motp-radius);
+  border: var(--motp-border);
+  box-shadow: var(--motp-shadow);
+  overflow: hidden;
+  animation: motp-pop .18s ease-out;
+}
+@keyframes motp-pop{
+  from{ transform: translateY(10px) scale(.985); opacity:.7; }
+  to{ transform: translateY(0) scale(1); opacity:1; }
+}
+
+.motp__head{
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 14px 16px;
+  border-bottom: var(--motp-border);
+  background: linear-gradient(180deg, #ffffff, var(--motp-surface-2));
+}
+.motp__title{ font-weight: 950; font-size: 16px; color: var(--motp-text); }
+.motp__close{
+  width: 36px; height: 36px;
+  border: var(--motp-border);
+  background: #fff;
+  border-radius: 12px;
+  cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  font-size: 20px;
+}
+.motp__close:hover{ background: rgba(0,0,0,.04); }
+
+.motp__body{ padding: 14px 16px 16px; }
+
+.motp__msg{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  margin: 0 0 12px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+.motp__msg-text{ flex: 1 1 auto; }
+.motp__msg[data-ok="1"]{
+  background: var(--motp-green-weak);
+  border-color: rgba(22,163,74,.35);
+  color: #166534;
+}
+.motp__msg[data-ok="0"]{
+  background: var(--motp-red-weak);
+  border-color: rgba(220,38,38,.35);
+  color: #991b1b;
+}
+
+/* Resend as minimal link button */
+.motp__msg-link{
+  position: relative;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 950;
+  color: var(--motp-green);
+  padding: 6px 8px;
+  border-radius: 10px;
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.motp__msg-link:hover{ background: rgba(22,163,74,.10); }
+.motp__msg-link:disabled{
+  opacity: .55;
+  cursor: not-allowed;
+}
+.motp__timer{ opacity: .75; }
+
+.motp__label{
+  display:block;
+  font-weight: 950;
+  margin: 8px 0;
+  color: var(--motp-text);
+}
+
+.motp__label-row{
+  margin-bottom: 10px ;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+}
+
+/* Change phone as small icon chip */
+.motp__icon-chip{
+  border: var(--motp-border);
+  background: #fff;
+  color: var(--motp-text);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 950;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+}
+.motp__icon-chip:hover{ background: rgba(0,0,0,.03); }
+.motp__icon{
+  width: 18px; height: 18px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 8px;
+  background: rgba(22,163,74,.12);
+  color: var(--motp-green);
+  font-size: 12px;
+  line-height: 1;
+}
+.motp__icon-chip-text{ font-size: 12.5px; }
+
+.motp__help{
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--motp-muted);
+}
+
+.motp__row{
+  display:flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.motp__input{
+  flex: 1 1 auto;
+  padding: 12px 12px;
+  border: var(--motp-border);
+  border-radius: 14px;
+  background: #fff;
+  outline: none;
+  text-align: left;
+  direction: ltr;
+}
+.motp__input:focus{
+  border-color: rgba(22,163,74,.35);
+  box-shadow: 0 0 0 4px rgba(22,163,74,.12);
+}
+
+.motp__btn{
+  position: relative;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(22,163,74,.35);
+  background: var(--motp-green);
+  color: #fff;
+  cursor:pointer;
+  font-weight: 950;
+  min-width: 120px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap: 8px;
+}
+.motp__btn:hover{ filter: brightness(1.03); }
+.motp__btn:disabled{ opacity:.7; cursor:not-allowed; }
+
+.motp__loader{
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,255,255,.55);
+  border-top-color: #fff;
+  display: none;
+  animation: motp-spin 0.8s linear infinite;
+}
+.motp__loader--dark{
+  border: 2px solid rgba(15,23,42,.22);
+  border-top-color: rgba(15,23,42,.75);
+}
+@keyframes motp-spin{ to{ transform: rotate(360deg); } }
+
+/* Loading state */
+.is-loading .motp__loader{ display:inline-block; }
+.is-loading .motp__btn-text{ opacity: 0; }
+.is-loading{ pointer-events:none; }
+
+/* Success */
+.motp__success{ text-align:center; padding: 8px 0 4px; }
+.motp__success-icon{ font-size: 34px; margin: 6px 0 2px; }
+.motp__success-title{ font-weight: 950; font-size: 18px; color: var(--motp-green); }
+.motp__success-sub{ color: var(--motp-muted); margin-top: 6px; }
+
+.motp__success-loader{
+  display:inline-flex;
+  gap: 6px;
+  margin-top: 14px;
+}
+.motp__dot{
+  width: 8px; height: 8px;
+  border-radius: 999px;
+  background: var(--motp-green);
+  animation: motp-bounce 0.9s infinite ease-in-out;
+}
+.motp__dot:nth-child(2){ animation-delay: .15s; opacity: .85; }
+.motp__dot:nth-child(3){ animation-delay: .3s; opacity: .7; }
+@keyframes motp-bounce{
+  0%,80%,100%{ transform: translateY(0); }
+  40%{ transform: translateY(-6px); }
+}
+
+.motp--lock{ overflow: hidden; }
+
+@media (max-width: 420px){
+  .motp__row{ flex-direction: column; }
+  .motp__btn{ width: 100%; min-width: 0; }
+  .motp__msg{ flex-direction: column; align-items: flex-start; }
+  .motp__msg-link{ align-self: flex-end; }
+  .motp__label-row{ align-items:flex-start; }
+  .motp__icon-chip-text{ display:none; } /* فقط آیکن در موبایل کوچک */
+  .motp__icon-chip{ padding: 6px 8px; }
+}

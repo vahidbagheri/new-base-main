@@ -59,6 +59,10 @@ $nav_classes = $nav_classes? implode( ' ', array_unique( $nav_classes ) ) : ''; 
             wp_nav_menu( $args );
         } ?>
 
-        <div id="reservation-menu" class="ms-auto py-1"></div>
+        <div id="reservation-menu" class="ms-auto py-1">
+            <? if( ! is_user_logged_in() && ! wp_is_mobile() ) :  ?>
+                <?= do_shortcode( '[mobile_otp_login]' ); ?>
+            <? endif; ?>
+        </div>
     </div>
 </nav>
